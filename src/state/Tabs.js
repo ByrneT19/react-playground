@@ -8,6 +8,7 @@ class Tabs extends React.Component {
     currentTabIndex: 0
   };
   handleButtonClick = () => {
+    debugger;
     console.log('button clicked!')
   }
   renderButtons() {
