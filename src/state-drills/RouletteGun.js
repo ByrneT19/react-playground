@@ -34,10 +34,10 @@ class RouletteGun extends Component {
 
     passTheGun() {
         const {chamber, spinningTheChamber} = this.state
-        const {bulletInChamber} = this.defaultProps
+        // const {bulletInChamber} = this.defaultProps
         if (spinningTheChamber) {
             return('spinning the chamber and pulling the trigger!...')
-        } else if (chamber === bulletInChamber) {
+        } else if (chamber === this.props.bulletInChamber) {
             return('BANG!!!!')
         } else {
             return('you\'re safe!!')
